@@ -2,8 +2,9 @@ let amadeusToken = null;
 
 async function getAmadeusToken() {
     // You'll need to sign up for Amadeus API to get these
-    const API_KEY = IC9c1Amz9IclnAeICsNuErjGj3q0nREJ;
-    const API_SECRET = PQRRmiZYmqXLyAA8;
+    const API_KEY = "IC9c1Amz9IclnAeICsNuErjGj3q0nREJ";
+    const API_SECRET = "PQRRmiZYmqXLyAA8";
+
     
     try {
         const response = await fetch('https://test.api.amadeus.com/v1/security/oauth2/token', {
