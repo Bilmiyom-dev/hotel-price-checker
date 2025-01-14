@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Hotel Price Comparison",
+  "version": "1.0",
+  "description": "Compares hotel prices across booking sites",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.booking.com/*",
+    "https://test.api.amadeus.com/*"
+  ],
+  "content_scripts": [{
+    "matches": ["*://*.booking.com/*"],
+    "js": ["content.js"]
+  }],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
